@@ -1,0 +1,116 @@
+.about {
+	background: $about-blue;
+
+
+	
+	#head__box {
+		background: url('../img/jeffrey-blue-2.png') no-repeat bottom left;
+		background-size: contain;
+		height: rem-calc(400);
+		position: relative;
+		
+
+		@media #{$medium-up} {
+			background-image: url('../img/jeffrey-blue.png');
+			background-position-x: 0%;
+			background-position-y: 100%;
+			// background-attachment: fixed;
+			background-size: cover;
+			height: 100vh;
+			min-height: rem-calc(400);
+			max-height: rem-calc(600);
+
+		}
+
+		@media #{$large-up} {
+			background-attachment: fixed;
+		}
+
+		.head__inner {
+			padding-top:4rem;
+
+			h1, h4 {
+				color: $dark-blue;
+			}
+
+
+			@media #{$medium-only} {
+				position: absolute;
+				bottom: rem-calc(20);
+
+				h1, h4 {
+					color: lighten($about-gray, 25);
+					@include text-shadow;
+				}
+			}
+		}
+
+		h1 {
+			@include zona--semibold;
+			
+			line-height: .9;
+			font-size: rem-calc(50);
+			
+
+			&:first-of-type {
+				padding-top: 0;
+				margin-top: 0;
+			}
+
+			&:last-of-type {
+				//margin-left: rem-calc(18);
+				//margin-top: rem-calc(-12);
+				margin-bottom: 0;
+			}
+
+			@media only screen and (max-width: rem-calc(680)) {
+				font-size: rem-calc(40);
+			}
+		}
+
+		h4 {
+			font-size: 2.4rem;
+			
+			@include zona--semibold;
+			margin-bottom: 0;
+			margin-left: rem-calc(18);
+			line-height: 1.2;
+
+			@media only screen and (max-width: rem-calc(680)) {
+				font-size: rem-calc(28);
+			}
+		}
+
+		@media #{$medium-up} {
+
+			background-size: contain;
+		}
+
+
+	}
+
+	#about__box {
+		background: $offwhite;
+
+		p {
+			font-size: 1.5rem;
+
+			@media #{$small-only} {
+				font-size: 1rem; 
+			}
+
+		}
+
+		span {
+			font-size: 2.7rem;
+			margin-right: 2rem;
+			@include transition;
+
+			&:hover {
+				color: darken($blue, 20);
+				@include transition;
+			}
+		}
+	}
+
+}

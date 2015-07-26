@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<%= partial "/layouts/partials/head" %>
+
+
+  <body class="<%= page_classes %>">
+    <%= partial "/layouts/partials/nav" %>
+    <div class="<%= page_classes %> content-wrapper">
+      <%= yield %>
+    
+        
+  </div>  
+<%= partial "/layouts/partials/footer" %>
+
+</body>
+</html>

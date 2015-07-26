@@ -1,0 +1,28 @@
+<nav>
+    <a href="#" class="menu-button" id="menuButton">
+          <span class="burger-icon"></span>
+          <p id="menuBoxP" data-text-swap="CLOSE">MENU</p>
+      </a>
+      <div id="menuBox" class="menu-box">
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/#portfolio">portfolio</a></li>
+          <li><%= link_to 'About', 'about.html' %></li>
+        </ul>
+
+    </div>
+  </nav>
+  <nav class="navbar">
+    <div>
+
+      <% link_to '/' do %>
+        <%= image_tag 'logo.png',:class => 'logo' , :alt => "Jeffrey Smith Designer" %>
+      <% end %>
+
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/#portfolio">portfolio</a></li>
+          <li><%= link_to 'About', 'about.html' %></li>
+        </ul>
+      </div>
+  </nav>
